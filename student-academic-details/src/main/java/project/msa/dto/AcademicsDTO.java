@@ -13,8 +13,6 @@ import project.msa.entity.Course;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AcademicsDTO {
-    private long academicId;
-
     private long studentId;
 
     private Course course;

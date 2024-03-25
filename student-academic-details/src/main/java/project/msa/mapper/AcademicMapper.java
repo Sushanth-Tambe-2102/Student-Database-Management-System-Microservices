@@ -6,7 +6,6 @@ import project.msa.entity.Academics;
 public class AcademicMapper {
     public static Academics maptoAcademics(AcademicsDTO academicsDTO){
         return new Academics(
-                academicsDTO.getAcademicId(),
                 academicsDTO.getStudentId(),
                 academicsDTO.getCourse(),
                 academicsDTO.getSemester(),
@@ -18,7 +17,6 @@ public class AcademicMapper {
     }
     public static AcademicsDTO maptoAcademicsDTO(Academics academics){
       return new AcademicsDTO(
-                academics.getAcademicId(),
                 academics.getStudentId(),
                 academics.getCourse(),
                 academics.getSemester(),

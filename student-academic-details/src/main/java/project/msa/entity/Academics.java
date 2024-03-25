@@ -16,8 +16,6 @@ import lombok.Setter;
 @Table(name = "Academics")
 public class Academics {
     @Id
-    private long academicId;
-
     @Column(nullable = false)
     private long studentId;
 

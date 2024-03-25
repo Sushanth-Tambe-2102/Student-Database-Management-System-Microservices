@@ -30,7 +30,7 @@ public class AcademicController {
     @PostMapping("/add-academic-details")
     public ResponseEntity<AcademicsDTO> addAcademicDetails(@RequestBody AcademicsDTO academicsDTO) {
         boolean studentExists =restTemplate.getForObject(
-                "http://student-personal-details/api/v1/personal/exists",
+                "http://student-personal-details/api/v1/personal/exists/" + academicsDTO.getStudentId(),
                 boolean.class);
         if(studentExists){
             return service.addAcademicDetail(academicsDTO);

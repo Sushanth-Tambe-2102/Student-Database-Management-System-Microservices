@@ -48,7 +48,7 @@ public class WorkServiceImplementation implements WorkService{
     @Override
     public ResponseEntity<WorkDTO>addWorkDetails(WorkDTO workdto) {
         try{
-            boolean studentExists = restTemplate.getForObject("http://student-personal-details/personal/exists/"+workdto.getStudentId(),boolean.class);
+            boolean studentExists = restTemplate.getForObject("http://student-personal-details/api/v1/personal/exists/"+workdto.getStudentId(),boolean.class);
             if(studentExists){
                 Work work = Mapper.mapToWork(workdto);
                 Work savedWork = repository.save(work);

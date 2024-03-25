@@ -13,7 +13,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Work {
     private long studentId;
-    private int employmentType;
+    private String employmentType;
     private String companyName;
     private String domain;
+    private double duration;
 }
