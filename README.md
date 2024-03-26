@@ -13,4 +13,4 @@
   - **Maintainability:** Modular design facilitates easier development, testing, and deployment of individual services.
   - **Flexibility:** New features can be implemented by adding new microservices without affecting existing functionalities.
   - **High Availability:** Service discovery ensures redundancy and uninterrupted service even if a single service encounters an issue.
-- This system offers a robust and adaptable platform for managing student data, fostering efficient record keeping and information retrieval for educational institutions and organizations.
+- This system offers a robust and adaptable platform for managing students data, fostering efficient record keeping and information retrieval for educational institutions and organizations.
